@@ -25,7 +25,7 @@ maintenance = { status = "passively-maintained" }
 
 [dependencies]
 ddc = "0.2"
-edid = "0.3"
+edid = { git = "https://github.com/jmb05/rust-edid" }
 mccs = "0.1"
 mccs-caps = "0.1"
 mccs-db = "0.1"

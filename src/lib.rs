@@ -155,8 +155,7 @@ impl DisplayInfo {
         trace!("DisplayInfo::from_edid({:?}, {})", backend, id);
 
         let edid = edid::parse(&edid_data)
-            .to_result()
-            .map_err(|e| io::Error::new(io::ErrorKind::InvalidData, e.to_string()))?;
+            .map_err(|e| io::Error::new(io::ErrorKind::InvalidData, e.to_string()))?.1;
 
         let mut model_name = None;
         let mut serial_number = None;
