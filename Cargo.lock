@@ -78,7 +78,7 @@ dependencies = [
 
 [[package]]
 name = "ddc-hi"
-version = "0.5.0"
+version = "0.5.0-jmb1"
 dependencies = [
  "ddc",
  "ddc-i2c",
